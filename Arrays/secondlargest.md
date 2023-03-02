@@ -39,6 +39,46 @@ int print2largest(int arr[], int n) {
 	    
 	    
 	}
+    TC- o(NLOGN)
 ```
+
+Better Logic :-  
+1) In first pass find out the largest.  
+2) In second pass find out secondlargest  but make sure that seclargest is not equal to  largest.  
+code :-  
+```cpp
+int print2largest(int arr[], int n) {
+	    
+	    if(n<2)
+	    return -1;
+	    int lar = INT_MIN;
+	    int slar = INT_MIN;
+	    
+	    for(int i = 0 ; i <n;i++)
+	     {
+	         lar = max(lar,arr[i]);
+	         
+	     }
+	    
+	     for(int i = 0; i<n;i++)
+	     {
+	         if(arr[i] > slar && arr[i] !=lar)
+	         {
+	             slar = arr[i];
+	             
+	         }
+	     }
+	     
+	     if(slar<0) slar = -1;
+	    
+	    return slar;
+	    
+	    
+	}
+};
+Tc- O(N)
+```
+  
+
 
 
