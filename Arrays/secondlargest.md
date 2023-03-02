@@ -1,8 +1,12 @@
-Bruteforce Logic :- \\
-1) Sort and return arr[n-2] This will not work for duplicates in array. TC(nlogn) \\
-2) To work sort and return we have to make sure second largest is not the largest \\
-code :-
-``cpp
+Bruteforce Logic :-    
+
+1) Sort and return arr[n-2] This will not work for duplicates in array. TC(nlogn)    
+
+2) To work sort and return we have to make sure second largest is not the largest    
+
+code :-   
+
+```cpp
 int print2largest(int arr[], int n) {
 	    
 	    if(n<2)
@@ -35,6 +39,6 @@ int print2largest(int arr[], int n) {
 	    
 	    
 	}
-``
+```
 
 
